@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\delete.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\delete.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\error_icon.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\error_icon.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\forward_arrow.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\forward_arrow.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\cart_red_36.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\cart_red_36.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\cart_72.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\cart_72.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\cart_icon.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\cart_icon.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\addition.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\addition.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\front_arrow_white.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\front_arrow_white.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\subtraction_.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\subtraction_.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\cart_count.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\cart_count.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\retry_icon.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\retry_icon.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\rupee.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\rupee.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\spinner_dropdown.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\spinner_dropdown.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\down_arrow_48.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxhdpi\\down_arrow_48.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    }
+]

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/category_image_view"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/category_image_view">
+
+                <TextView
+                    android:id="@+id/milk_list_item_title_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_item_image_layout"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="fresh"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/category_list_item_tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/milk_list_item_title_type"
+                    android:layout_marginTop="5dp"
+                    android:text="MILK"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/milk_list_item_weight_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/category_list_item_tittle"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/category_list_item_sub_tittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/rounded_edit_text"
+                        android:drawableRight="@drawable/ic_expand_more_black_24dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="3dp"
+                        android:text="500 Gms"
+                        android:textColor="#999"
+                        android:textSize="15dp"
+                        android:textStyle="bold|italic" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="1dp"
+                        android:src="@mipmap/down_arrow_48"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/category_list_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/milk_list_item_weight_layout"
+                    android:layout_marginTop="5dp"
+                    android:text="Rs. 60"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#ee324a"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/milk_list_item_weight_layout"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp">
+
+                    <RelativeLayout
+                        android:id="@+id/minus_layout"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@+id/plus_layout"
+                        android:background="@drawable/circle_outline_products_list"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="9dp"
+                            android:layout_height="1dp"
+                            android:layout_centerInParent="true"
+                            android:background="#898989" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/plus_layout"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/circle_red"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/category_list_total_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Add"
+                            android:textColor="@color/white"
+                            android:textSize="9dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pp_login_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/register_app_logo"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/logo" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/register_text_input_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_app_logo"
+                    android:layout_marginTop="50dp"
+                    android:layout_toLeftOf="@+id/register_mobile_progress_bar">
+
+                    <EditText
+                        android:id="@+id/register_input_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="Mobile number"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ProgressBar
+                    android:id="@+id/register_mobile_progress_bar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/register_app_logo"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/password_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_text_input_mobile"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/register_set_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Set your password to continue" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/register_text_input_new_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/register_set_txt"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/register_input_new_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:hint="New Password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/register_text_input_conform_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/register_text_input_new_password"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/register_input_conform_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:hint="Confirm Password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/register_button_register"
+                        style="?attr/buttonBarButtonStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/register_text_input_conform_password"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="?attr/colorPrimary"
+                        android:text="Submit"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_button"
+                        android:textSize="16dp" />
+
+
+                    <TextView
+                        android:id="@+id/register_text_forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/register_button_register"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Forgot password?"
+                        android:textColor="@color/forgot_color"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/register_text_forgot_password"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/login_bottom_text"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

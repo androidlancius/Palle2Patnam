@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\palle_logo.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-hdpi\\palle_logo.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\truck.png",
+        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\mipmap-hdpi\\truck.png"
+    }
+]

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@android:drawable/ic_secure"
+            android:title="My Account" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/cart_black"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/nav_faqs"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="FAQ's" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@android:drawable/ic_menu_call"
+                android:title="Contact" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,358 +1,358 @@
 [
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_layout_tab_icon.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_splash.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sliding_images_layout.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\sliding_images_layout.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\notification_template_lines_media.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\orders_list_item.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\orders_list_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_product_pwindow_list_item.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_product_pwindow_list_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_list_item.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\cart_list_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_password.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_password.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\notification_template_custom_big.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\notification_template_custom_big.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_layout_snackbar.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\notification_action_tombstone.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product_list_item.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\product_list_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\orders_list_item.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\orders_list_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_milk_category.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_milk_category.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_dialog_title_material.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_navigation_item_header.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_password.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_password.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nonetwork.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\nonetwork.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_navigation_item_header.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_screen_content_include.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_category_detail_new.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_category_detail_new.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_navigation_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\notification_action_tombstone.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\vegetables_category_list_item.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\vegetables_category_list_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\category_grid_item.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\category_grid_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\banner_list_item.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\banner_list_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_navigation_item_separator.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product_list_item.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\product_list_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_activity_chooser_view.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\orders_list.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\orders_list.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_navigation_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\nav_header_main.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\category_grid_item.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\category_grid_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\contact_us.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\contact_us.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_category_detail.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_category_detail.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\forgot_password.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\forgot_password.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_alert_dialog_material.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\notification_action.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_navigation_item_subheader.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\notification_template_part_time.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_navigation_menu.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\contact_us.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\contact_us.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\notification_template_media.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_list_view.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\cart_list_view.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_menu_item_action_area.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\order_payment.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\order_payment.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_layout_snackbar_include.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\forgot_password.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\forgot_password.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\order_payment.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\order_payment.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_navigation_menu_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nonetwork.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\nonetwork.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grocery_empty_screen.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\grocery_empty_screen.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_navigation_menu.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_category_product_price.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_category_product_price.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_layout_tab_text.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_register.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\notification_template_media_custom.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\orders_detail_screen.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\orders_detail_screen.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_category_detail_list_item.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_category_detail_list_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\meat_empty_screen.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\meat_empty_screen.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\content_main.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\content_main.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_category_detail_new.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_category_detail_new.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\select_dialog_item_material.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\meat_empty_screen.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\meat_empty_screen.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_screen_toolbar.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_bottom_navigation_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\notification_template_media_custom.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\banner_list_item.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\banner_list_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_screen_simple.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\orders_list.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\orders_list.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\forgot_password_popup.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\forgot_password_popup.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_bottom_navigation_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grocery_empty_screen.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\grocery_empty_screen.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_category_product_price.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_category_product_price.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\orders_detail_screen.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\orders_detail_screen.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\app_bar_main.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\order_success.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\order_success.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\order_success.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\order_success.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_category_detail_list_item.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_category_detail_list_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_milk_category_detail_list_item.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_milk_category_detail_list_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_milk_category_detail_list_item.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_milk_category_detail_list_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\change_password.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\change_password.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\notification_action.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_product_pwindow_list_item.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_product_pwindow_list_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_list_view.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\cart_list_view.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\c643db154e27a8c0250ce09beb9abc4c1c012f5b\\output\\res\\layout\\design_text_input_password_icon.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_layout_snackbar.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_account.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\my_account.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_milk_category.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_milk_category.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\notification_template_icon_group.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_action_menu_layout.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\notification_template_icon_group.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\change_password.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\change_password.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\forgot_password_popup.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\forgot_password_popup.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_list_item.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\cart_list_item.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\9e9c48921b9202274dbaedaa9131064bf02b0e0a\\output\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_category_detail.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\activity_category_detail.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_account.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\my_account.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_layout_tab_text.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_search_view.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\vegetables_category_list_item.xml",
+        "source": "E:\\Palle2Patnam\\app\\src\\main\\res\\layout\\vegetables_category_list_item.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sliding_images_layout.xml",
-        "source": "F:\\Palle2Patnam\\app\\src\\main\\res\\layout\\sliding_images_layout.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
-        "merged": "F:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\lancius\\.android\\build-cache\\ea131bbfc000568673ac71115f208815f4a48c64\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+        "merged": "E:\\Palle2Patnam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "C:\\Users\\madhu\\.android\\build-cache\\3066baaa183ce499b3488f747e9bdb3f3d86daad\\output\\res\\layout\\design_text_input_password_icon.xml"
     }
 ]

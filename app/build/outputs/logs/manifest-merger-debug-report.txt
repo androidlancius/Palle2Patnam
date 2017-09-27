@@ -1,281 +1,445 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:2:1-122:12
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:2:1-138:12
 	package
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:3:5-39
-		INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:5:5-79
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:5:5-79
+MERGED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.0] C:\Users\madhu\.android\build-cache\e22f03299ef7a46563bee3446fa789002dbb2c5d\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.INTERNET
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.0] C:\Users\madhu\.android\build-cache\e22f03299ef7a46563bee3446fa789002dbb2c5d\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:8:5-80
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:8:22-77
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:8:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:9:5-81
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:9:22-78
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:9:22-78
 application
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:11:5-120:19
-MERGED from [com.android.support:design:25.3.1] C:\Users\lancius\.android\build-cache\c643db154e27a8c0250ce09beb9abc4c1c012f5b\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\lancius\.android\build-cache\ea131bbfc000568673ac71115f208815f4a48c64\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\lancius\.android\build-cache\3311946fe817eee2118c01d21dc7fe1881d0499d\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lancius\.android\build-cache\3f2b725d23ae00b15554c719526baf73a9cb314b\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\lancius\.android\build-cache\b54a1c769eb918d337865a0621940f7d90ca9ec4\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lancius\.android\build-cache\065cee4de5a545d90710f88912eb052e88936c31\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lancius\.android\build-cache\500fc254a4d30836114d47d1d4539da8d3a74f4b\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lancius\.android\build-cache\9721f9e03dcaf57031c40952ff4dc9ca7606a9a4\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lancius\.android\build-cache\d9967377dcb96e47e3b6340808f204260f70c753\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lancius\.android\build-cache\1349d091d674fff85775881373719d06f18fa53a\output\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lancius\.android\build-cache\fc4f314f0c9b2f7b076c1779738702fdd688be6f\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lancius\.android\build-cache\ec1ab5376729a915835dd70f54de537492799136\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\lancius\.android\build-cache\839f0045c55ff52a3c6dd3951bb6d1326a02d44c\output\AndroidManifest.xml:22:5-20
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:11:5-136:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\madhu\.android\build-cache\3066baaa183ce499b3488f747e9bdb3f3d86daad\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\madhu\.android\build-cache\9e9c48921b9202274dbaedaa9131064bf02b0e0a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\madhu\.android\build-cache\d87533168250025d66935a8c27234c99f5dc7c76\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\madhu\.android\build-cache\e569a587d7740905cc850455bb88fa58cfff0b04\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\madhu\.android\build-cache\53e46ac56e37b91339a8a8541f55447e90a7c858\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\madhu\.android\build-cache\d1b0ff89e47922cd4dee405c978c57f0f16112bc\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\madhu\.android\build-cache\3ad8763d71ddf247835f845576d0d57fd14ebd3b\output\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-messaging:9.6.0] C:\Users\madhu\.android\build-cache\03193a381aaade3eed6a892b1f0dc04b6ab011f3\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\madhu\.android\build-cache\2fbf216270628ac8648e3c3a6a365f3753856a7e\output\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-core:9.6.0] C:\Users\madhu\.android\build-cache\9dd62631e83c081dcb4a71e0bdf3ab1d39641ec3\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.0] C:\Users\madhu\.android\build-cache\e22f03299ef7a46563bee3446fa789002dbb2c5d\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:9.6.0] C:\Users\madhu\.android\build-cache\f4430632e9cf50808375d1272f992e2b356333cd\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:9.6.0] C:\Users\madhu\.android\build-cache\ebfcb4700d629422474d4c74e66dcf3bc4de64e8\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:9.6.0] C:\Users\madhu\.android\build-cache\e9b839a2766535621e250df97e38621a429ce8fd\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\madhu\.android\build-cache\1788a0c11f01b8eb1fadea081efd07b373bad083\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\madhu\.android\build-cache\f58d0d02b5ba26b621e981ca57c365fc0f2cc573\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\madhu\.android\build-cache\7d062092e123ee1f8173e387aefd4178dcee99d8\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\madhu\.android\build-cache\cfb90f57a15cee630453d54762e977f1c5718ea8\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\madhu\.android\build-cache\df537dbee4dd2c6df67cf216e6755111da16f0d3\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\madhu\.android\build-cache\010b71a7b3ecc12416542400c1dc818dafb69f12\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:14:9-41
 	android:supportsRtl
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:16:9-35
 	android:roundIcon
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:15:9-47
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:15:9-47
 	android:allowBackup
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:12:9-35
 	android:icon
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:13:9-42
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:13:9-42
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:17:9-40
 activity#com.lancius.palle2patnam.activity.SplashScreen
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:18:9-27:20
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:18:9-27:20
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:20:13-45
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:20:13-45
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:21:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:21:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:19:13-50
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:19:13-50
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:25:27-74
+service#com.lancius.palle2patnam.service.MyFirebaseInstanceIDService
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:28:9-32:19
+	android:name
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:28:18-69
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:29:13-31:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:30:17-80
+	android:name
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:30:25-77
+service#com.lancius.palle2patnam.service.MyFirebaseMessagingService
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:33:9-37:19
+	android:name
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:33:18-68
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:34:13-36:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:35:17-78
+	android:name
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:35:25-75
+meta-data#com.google.firebase.messaging.default_notification_icon
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:39:9-41:60
+	android:resource
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:41:13-57
+	android:name
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:40:13-83
+meta-data#com.google.firebase.messaging.default_notification_color
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:42:9-44:53
+	android:resource
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:44:13-51
+	android:name
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:43:13-84
 activity#com.lancius.palle2patnam.activity.LoginActivity
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:29:9-33:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:45:9-49:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:31:13-45
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:47:13-45
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:33:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:49:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:32:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:48:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:30:13-51
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:46:13-51
 activity#com.lancius.palle2patnam.activity.MainActivity
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:34:9-38:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:50:9-54:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:36:13-45
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:52:13-45
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:38:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:54:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:37:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:53:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:35:13-50
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:51:13-50
 activity#com.lancius.palle2patnam.activity.PasswordActivity
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:39:9-43:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:55:9-59:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:41:13-45
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:57:13-45
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:43:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:59:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:42:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:58:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:40:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:56:13-54
 activity#com.lancius.palle2patnam.activity.RegisterActivity
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:44:9-48:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:60:9-64:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:46:13-45
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:62:13-45
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:48:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:64:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:47:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:63:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:45:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:61:13-54
 activity#com.lancius.palle2patnam.activity.CategoryListActivity
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:49:9-53:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:65:9-69:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:51:13-45
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:67:13-45
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:53:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:69:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:52:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:68:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:50:13-58
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:66:13-58
 activity#com.lancius.palle2patnam.activity.MilkCategoryActivity
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:54:9-58:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:70:9-74:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:56:13-45
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:72:13-45
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:58:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:74:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:57:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:73:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:55:13-58
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:71:13-58
 activity#com.lancius.palle2patnam.activity.CategoryDetailNew
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:60:9-64:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:76:9-80:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:62:13-45
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:78:13-45
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:64:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:80:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:63:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:79:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:61:13-55
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:77:13-55
 activity#com.lancius.palle2patnam.activity.NoNetworkActivity
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:66:9-70:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:82:9-86:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:68:13-39
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:84:13-39
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:70:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:86:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:69:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:85:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:67:13-55
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:83:13-55
 activity#com.lancius.palle2patnam.activity.CartActivity
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:72:9-76:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:88:9-92:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:74:13-38
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:90:13-38
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:76:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:92:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:75:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:91:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:73:13-50
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:89:13-50
 activity#com.lancius.palle2patnam.activity.OrderPayment
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:78:9-82:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:94:9-98:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:80:13-39
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:96:13-39
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:82:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:98:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:81:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:97:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:79:13-50
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:95:13-50
 activity#com.lancius.palle2patnam.activity.OrderSuccessActivity
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:84:9-88:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:100:9-104:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:86:13-42
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:102:13-42
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:88:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:104:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:87:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:103:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:85:13-58
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:101:13-58
 activity#com.lancius.palle2patnam.activity.MyAccount
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:90:9-94:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:106:9-110:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:92:13-39
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:108:13-39
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:94:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:110:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:93:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:109:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:91:13-47
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:107:13-47
 activity#com.lancius.palle2patnam.activity.MyOrders
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:96:9-100:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:112:9-116:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:98:13-38
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:114:13-38
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:100:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:116:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:99:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:115:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:97:13-46
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:113:13-46
 activity#com.lancius.palle2patnam.activity.ChangePassword
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:102:9-106:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:118:9-122:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:104:13-44
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:120:13-44
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:106:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:122:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:105:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:121:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:103:13-52
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:119:13-52
 activity#com.lancius.palle2patnam.activity.ForgotPassword
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:108:9-112:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:124:9-128:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:110:13-44
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:126:13-44
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:112:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:128:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:111:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:127:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:109:13-52
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:125:13-52
 activity#com.lancius.palle2patnam.activity.ContactUs
-ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:114:9-118:57
+ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:130:9-134:57
 	android:label
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:116:13-39
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:132:13-39
 	android:windowSoftInputMode
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:118:13-54
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:134:13-54
 	android:theme
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:117:13-56
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:133:13-56
 	android:name
-		ADDED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml:115:13-47
+		ADDED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml:131:13-47
 uses-sdk
-INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:25.3.1] C:\Users\lancius\.android\build-cache\c643db154e27a8c0250ce09beb9abc4c1c012f5b\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\lancius\.android\build-cache\ea131bbfc000568673ac71115f208815f4a48c64\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\lancius\.android\build-cache\3311946fe817eee2118c01d21dc7fe1881d0499d\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lancius\.android\build-cache\3f2b725d23ae00b15554c719526baf73a9cb314b\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\lancius\.android\build-cache\b54a1c769eb918d337865a0621940f7d90ca9ec4\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lancius\.android\build-cache\065cee4de5a545d90710f88912eb052e88936c31\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lancius\.android\build-cache\500fc254a4d30836114d47d1d4539da8d3a74f4b\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lancius\.android\build-cache\9721f9e03dcaf57031c40952ff4dc9ca7606a9a4\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lancius\.android\build-cache\d9967377dcb96e47e3b6340808f204260f70c753\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lancius\.android\build-cache\1349d091d674fff85775881373719d06f18fa53a\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\lancius\.android\build-cache\3676f6d383b02b08145dc3789c33f7cfebffe610\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lancius\.android\build-cache\fc4f314f0c9b2f7b076c1779738702fdd688be6f\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lancius\.android\build-cache\ec1ab5376729a915835dd70f54de537492799136\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\lancius\.android\build-cache\839f0045c55ff52a3c6dd3951bb6d1326a02d44c\output\AndroidManifest.xml:20:5-43
+INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:25.3.1] C:\Users\madhu\.android\build-cache\3066baaa183ce499b3488f747e9bdb3f3d86daad\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\madhu\.android\build-cache\9e9c48921b9202274dbaedaa9131064bf02b0e0a\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\madhu\.android\build-cache\d87533168250025d66935a8c27234c99f5dc7c76\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\madhu\.android\build-cache\e569a587d7740905cc850455bb88fa58cfff0b04\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\madhu\.android\build-cache\53e46ac56e37b91339a8a8541f55447e90a7c858\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\madhu\.android\build-cache\d1b0ff89e47922cd4dee405c978c57f0f16112bc\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\madhu\.android\build-cache\2d9daaed5d92f65b1cbc5c21cc45c90b0d136f43\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\madhu\.android\build-cache\3ad8763d71ddf247835f845576d0d57fd14ebd3b\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-messaging:9.6.0] C:\Users\madhu\.android\build-cache\03193a381aaade3eed6a892b1f0dc04b6ab011f3\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\madhu\.android\build-cache\2fbf216270628ac8648e3c3a6a365f3753856a7e\output\AndroidManifest.xml:7:5-43
+MERGED from [com.google.firebase:firebase-core:9.6.0] C:\Users\madhu\.android\build-cache\9dd62631e83c081dcb4a71e0bdf3ab1d39641ec3\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.0] C:\Users\madhu\.android\build-cache\e22f03299ef7a46563bee3446fa789002dbb2c5d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:9.6.0] C:\Users\madhu\.android\build-cache\f4430632e9cf50808375d1272f992e2b356333cd\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.6.0] C:\Users\madhu\.android\build-cache\ebfcb4700d629422474d4c74e66dcf3bc4de64e8\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.6.0] C:\Users\madhu\.android\build-cache\e9b839a2766535621e250df97e38621a429ce8fd\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\madhu\.android\build-cache\1788a0c11f01b8eb1fadea081efd07b373bad083\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\madhu\.android\build-cache\f58d0d02b5ba26b621e981ca57c365fc0f2cc573\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\madhu\.android\build-cache\7d062092e123ee1f8173e387aefd4178dcee99d8\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\madhu\.android\build-cache\cfb90f57a15cee630453d54762e977f1c5718ea8\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\madhu\.android\build-cache\df537dbee4dd2c6df67cf216e6755111da16f0d3\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\madhu\.android\build-cache\010b71a7b3ecc12416542400c1dc818dafb69f12\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\lancius\.android\build-cache\c643db154e27a8c0250ce09beb9abc4c1c012f5b\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] C:\Users\madhu\.android\build-cache\3066baaa183ce499b3488f747e9bdb3f3d86daad\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Palle2Patnam\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Palle2Patnam\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\lancius\.android\build-cache\c643db154e27a8c0250ce09beb9abc4c1c012f5b\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\lancius\.android\build-cache\ea131bbfc000568673ac71115f208815f4a48c64\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\lancius\.android\build-cache\3311946fe817eee2118c01d21dc7fe1881d0499d\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lancius\.android\build-cache\3f2b725d23ae00b15554c719526baf73a9cb314b\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\lancius\.android\build-cache\b54a1c769eb918d337865a0621940f7d90ca9ec4\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lancius\.android\build-cache\065cee4de5a545d90710f88912eb052e88936c31\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lancius\.android\build-cache\500fc254a4d30836114d47d1d4539da8d3a74f4b\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lancius\.android\build-cache\9721f9e03dcaf57031c40952ff4dc9ca7606a9a4\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lancius\.android\build-cache\d9967377dcb96e47e3b6340808f204260f70c753\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\lancius\.android\build-cache\3676f6d383b02b08145dc3789c33f7cfebffe610\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lancius\.android\build-cache\fc4f314f0c9b2f7b076c1779738702fdd688be6f\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lancius\.android\build-cache\ec1ab5376729a915835dd70f54de537492799136\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] C:\Users\madhu\.android\build-cache\3066baaa183ce499b3488f747e9bdb3f3d86daad\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\madhu\.android\build-cache\9e9c48921b9202274dbaedaa9131064bf02b0e0a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\madhu\.android\build-cache\d87533168250025d66935a8c27234c99f5dc7c76\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\madhu\.android\build-cache\e569a587d7740905cc850455bb88fa58cfff0b04\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\madhu\.android\build-cache\53e46ac56e37b91339a8a8541f55447e90a7c858\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\madhu\.android\build-cache\2d9daaed5d92f65b1cbc5c21cc45c90b0d136f43\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\madhu\.android\build-cache\1788a0c11f01b8eb1fadea081efd07b373bad083\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\madhu\.android\build-cache\f58d0d02b5ba26b621e981ca57c365fc0f2cc573\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\madhu\.android\build-cache\7d062092e123ee1f8173e387aefd4178dcee99d8\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\madhu\.android\build-cache\cfb90f57a15cee630453d54762e977f1c5718ea8\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\madhu\.android\build-cache\df537dbee4dd2c6df67cf216e6755111da16f0d3\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\madhu\.android\build-cache\010b71a7b3ecc12416542400c1dc818dafb69f12\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\lancius\.android\build-cache\c643db154e27a8c0250ce09beb9abc4c1c012f5b\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] C:\Users\madhu\.android\build-cache\3066baaa183ce499b3488f747e9bdb3f3d86daad\output\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\lancius\.android\build-cache\c643db154e27a8c0250ce09beb9abc4c1c012f5b\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] C:\Users\madhu\.android\build-cache\3066baaa183ce499b3488f747e9bdb3f3d86daad\output\AndroidManifest.xml:26:9-47
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:9.6.0] C:\Users\madhu\.android\build-cache\03193a381aaade3eed6a892b1f0dc04b6ab011f3\output\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:9.6.0] C:\Users\madhu\.android\build-cache\03193a381aaade3eed6a892b1f0dc04b6ab011f3\output\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:9.6.0] C:\Users\madhu\.android\build-cache\03193a381aaade3eed6a892b1f0dc04b6ab011f3\output\AndroidManifest.xml:23:18-87
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.0] C:\Users\madhu\.android\build-cache\e22f03299ef7a46563bee3446fa789002dbb2c5d\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.0] C:\Users\madhu\.android\build-cache\e22f03299ef7a46563bee3446fa789002dbb2c5d\output\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.0] C:\Users\madhu\.android\build-cache\e22f03299ef7a46563bee3446fa789002dbb2c5d\output\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.6.0] C:\Users\madhu\.android\build-cache\ccf3ec94aece84be3463a1ee2f4c55bf92d82b6c\output\AndroidManifest.xml:32:16-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:22:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:31:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:32:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:33:17-85
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:33:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:34:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:40:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:40:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:40:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:44:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:44:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.0] C:\Users\madhu\.android\build-cache\806ebe57524662a5dd30c1795b1f86fb0cd50b21\output\AndroidManifest.xml:44:18-82
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.6.0] C:\Users\madhu\.android\build-cache\f4430632e9cf50808375d1272f992e2b356333cd\output\AndroidManifest.xml:6:9-175
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.6.0] C:\Users\madhu\.android\build-cache\f4430632e9cf50808375d1272f992e2b356333cd\output\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.6.0] C:\Users\madhu\.android\build-cache\f4430632e9cf50808375d1272f992e2b356333cd\output\AndroidManifest.xml:6:125-149
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.6.0] C:\Users\madhu\.android\build-cache\f4430632e9cf50808375d1272f992e2b356333cd\output\AndroidManifest.xml:6:150-173
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.6.0] C:\Users\madhu\.android\build-cache\f4430632e9cf50808375d1272f992e2b356333cd\output\AndroidManifest.xml:6:79-124
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:9.6.0] C:\Users\madhu\.android\build-cache\e9b839a2766535621e250df97e38621a429ce8fd\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:9.6.0] C:\Users\madhu\.android\build-cache\e9b839a2766535621e250df97e38621a429ce8fd\output\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:9.6.0] C:\Users\madhu\.android\build-cache\e9b839a2766535621e250df97e38621a429ce8fd\output\AndroidManifest.xml:20:20-65

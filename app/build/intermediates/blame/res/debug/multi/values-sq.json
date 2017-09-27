@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "E:\\Palle2Patnam\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 239,
+                    "endOffset": 340
+                },
+                "from": {
+                    "file": "C:\\Users\\madhu\\.android\\build-cache\\e9b839a2766535621e250df97e38621a429ce8fd\\output\\res\\values-sq\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 343,
+                        "endColumn": 239,
+                        "endOffset": 578
+                    }
+                }
+            }
+        ]
+    }
+]

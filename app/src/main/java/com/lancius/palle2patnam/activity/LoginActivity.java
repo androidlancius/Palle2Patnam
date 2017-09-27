@@ -63,13 +63,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     Button submit;
     Intent intent;
     View v;
-
+     String token;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
         v = (View) findViewById(R.id.main_view);
+
 
         session = new SessionManager(getApplicationContext());
         session.showingSession();
@@ -200,6 +201,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             List<NameValuePair> params = new ArrayList<>();
             params.add(new BasicNameValuePair("mobile", username));
             params.add(new BasicNameValuePair("password", newpassword));
+
 
             //getting jason object to post the arguments
             JSONObject json = null;

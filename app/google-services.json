@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "877827409401",
+    "firebase_url": "https://palle2patnam-f7652.firebaseio.com",
+    "project_id": "palle2patnam-f7652",
+    "storage_bucket": "palle2patnam-f7652.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877827409401:android:f72d5630a879c351",
+        "android_client_info": {
+          "package_name": "com.lancius.palle2patnam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877827409401-8o2e419d4mtjhsiptvni7crethcksedt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMkbNQMwrASBAipFsf6v9DIjY64DcuggY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

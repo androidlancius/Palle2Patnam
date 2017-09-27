@@ -19,5 +19,6 @@ public class WebServices {
     public static String MY_ACCOUNT_URL = "https://palle2patnam.com/mobile/mobile_my_account.php";
     public static String CHANGE_PASSWORD_URL = "https://palle2patnam.com/mobile/mobile_change_password.php";
     public static String FORGOT_PASSWORD_URL = "https://palle2patnam.com/mobile/mobile_forgot_password.php";
+    public static String NOTIFICATION_TOKEN = "https://palle2patnam.com/FcmExamples/RegisterDevice.php";
 
 }

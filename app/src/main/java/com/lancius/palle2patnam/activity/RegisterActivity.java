@@ -60,13 +60,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private Matcher matcher;
     Button submit;
     Intent intent;
+    String token;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
+        token = com.lancius.palle2patnam.activity.SharedPrefManager.getInstance(this).getDeviceToken();
         session = new SessionManager(getApplicationContext());
+        Log.d("token,",token);
         pBar = (ProgressBar) findViewById(R.id.register_mobile_progress_bar);
 
         usernameInput = (EditText) findViewById(R.id.register_input_mobile);
@@ -252,6 +254,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             List<NameValuePair> params = new ArrayList<>();
             params.add(new BasicNameValuePair("mobile", username));
             params.add(new BasicNameValuePair("password", newpassword));
+            params.add(new BasicNameValuePair("token", token));
 
             //getting jason object to post the arguments
             JSONObject json = null;

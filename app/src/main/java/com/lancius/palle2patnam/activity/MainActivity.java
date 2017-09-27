@@ -29,10 +29,16 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.lancius.palle2patnam.R;
 import com.lancius.palle2patnam.adapter.SlidingImageAdapter;
+import com.lancius.palle2patnam.service.MyVolley;
 import com.lancius.palle2patnam.utils.CirclePageIndicator;
 import com.lancius.palle2patnam.utils.CommonUtilities;
 import com.lancius.palle2patnam.utils.Constants;
@@ -48,6 +54,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -86,6 +93,7 @@ public class MainActivity extends AppCompatActivity
     ListView listView;
     IconAdapter dataAdapter;
     ImageView imageview;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +108,7 @@ public class MainActivity extends AppCompatActivity
         imagesList = new ArrayList<String>();
         productsList = new ArrayList<>();
         bannerList = new ArrayList<HashMap<String, String>>();
+        final String token = com.lancius.palle2patnam.activity.SharedPrefManager.getInstance(this).getDeviceToken();
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -127,6 +136,8 @@ public class MainActivity extends AppCompatActivity
             new gettingBanners().execute();
             new categoryDetail().execute();
             new gettingUpcomingBanner().execute();
+            sendTokenToServer();
+            Log.d("token_generated", token);
 
         } else {
 
@@ -135,6 +146,50 @@ public class MainActivity extends AppCompatActivity
             startActivity(Constants.intent);
 
         }
+    }
+    private void sendTokenToServer() {
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Registering Device...");
+        progressDialog.show();
+
+        final String token = com.lancius.palle2patnam.activity.SharedPrefManager.getInstance(this).getDeviceToken();
+
+        if (token == null) {
+            progressDialog.dismiss();
+            Toast.makeText(this, "Token not generated", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, WebServices.NOTIFICATION_TOKEN,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        progressDialog.dismiss();
+                        try {
+                            JSONObject obj = new JSONObject(response);
+//                            Toast.makeText(FreetrialNew.this, obj.getString("message"), Toast.LENGTH_LONG).show();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        progressDialog.dismiss();
+                        Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                }) {
+
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("email", "harishreddy.tekula@gmail.com");
+                params.put("token", token);
+                return params;
+            }
+        };
+        MyVolley.getInstance(this).addToRequestQueue(stringRequest);
     }
 
     class gettingBanners extends AsyncTask<String, String, String> {

@@ -1,7 +1,7 @@
-#Wed Sep 27 11:01:33 IST 2017
-base.0=F\:\\Palle2Patnam\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_95d8936dfbd7df9c6c9298780dfeed3b68b6c748
+#Wed Sep 27 13:25:23 IST 2017
+base.0=E\:\\Palle2Patnam\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_1584728cdd219611ba57f0338888a78ba436bd99
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=F\:\\Palle2Patnam\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5669356111a85dec01d652a4af9a4d34b4394ea4\\classes.dex
-base.1=F\:\\Palle2Patnam\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5669356111a85dec01d652a4af9a4d34b4394ea4
-file.0=F\:\\Palle2Patnam\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_95d8936dfbd7df9c6c9298780dfeed3b68b6c748\\classes.dex
+file.1=E\:\\Palle2Patnam\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b903022bf7221196a155db650a3e6f5b38212e39\\classes.dex
+base.1=E\:\\Palle2Patnam\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b903022bf7221196a155db650a3e6f5b38212e39
+file.0=E\:\\Palle2Patnam\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_1584728cdd219611ba57f0338888a78ba436bd99\\classes.dex

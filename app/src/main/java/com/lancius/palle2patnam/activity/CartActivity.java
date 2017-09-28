@@ -541,6 +541,10 @@ public class CartActivity extends AppCompatActivity {
                     Constants.intent = new Intent(getApplicationContext(), CategoryListActivity.class);
                     startActivity(Constants.intent);
                     this.finish();
+                } else if (from.equalsIgnoreCase("Main")) {
+                    Constants.intent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(Constants.intent);
+                    this.finish();
                 } else {
                     this.finish();
                 }
@@ -560,6 +564,10 @@ public class CartActivity extends AppCompatActivity {
             this.finish();
         } else if (from.equalsIgnoreCase("CatList")) {
             Constants.intent = new Intent(getApplicationContext(), CategoryListActivity.class);
+            startActivity(Constants.intent);
+            this.finish();
+        } else if (from.equalsIgnoreCase("Main")) {
+            Constants.intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(Constants.intent);
             this.finish();
         } else {

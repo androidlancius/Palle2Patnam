@@ -136,8 +136,6 @@ public class MainActivity extends AppCompatActivity
             new gettingBanners().execute();
             new categoryDetail().execute();
             new gettingUpcomingBanner().execute();
-            sendTokenToServer();
-            Log.d("token_generated", token);
 
         } else {
 
@@ -146,50 +144,6 @@ public class MainActivity extends AppCompatActivity
             startActivity(Constants.intent);
 
         }
-    }
-    private void sendTokenToServer() {
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Registering Device...");
-        progressDialog.show();
-
-        final String token = com.lancius.palle2patnam.activity.SharedPrefManager.getInstance(this).getDeviceToken();
-
-        if (token == null) {
-            progressDialog.dismiss();
-            Toast.makeText(this, "Token not generated", Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, WebServices.NOTIFICATION_TOKEN,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        progressDialog.dismiss();
-                        try {
-                            JSONObject obj = new JSONObject(response);
-//                            Toast.makeText(FreetrialNew.this, obj.getString("message"), Toast.LENGTH_LONG).show();
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        progressDialog.dismiss();
-                        Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_LONG).show();
-                    }
-                }) {
-
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                params.put("email", "harishreddy.tekula@gmail.com");
-                params.put("token", token);
-                return params;
-            }
-        };
-        MyVolley.getInstance(this).addToRequestQueue(stringRequest);
     }
 
     class gettingBanners extends AsyncTask<String, String, String> {
@@ -804,6 +758,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(Constants.intent);
         } else if (id == R.id.nav_cart) {
             Constants.intent = new Intent(getApplicationContext(), CartActivity.class);
+            session.storeToCart("Main");
             startActivity(Constants.intent);
         } else if (id == R.id.nav_faqs) {
 
@@ -820,7 +775,6 @@ public class MainActivity extends AppCompatActivity
             Constants.intent = new Intent(getApplicationContext(), ContactUs.class);
             startActivity(Constants.intent);
         }
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

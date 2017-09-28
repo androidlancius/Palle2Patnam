@@ -32,6 +32,8 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.lancius.palle2patnam.Database.Category;
 import com.lancius.palle2patnam.Database.DatabaseHandler;
 import com.lancius.palle2patnam.R;
+import com.lancius.palle2patnam.utils.CommonUtilities;
+import com.lancius.palle2patnam.utils.Constants;
 import com.lancius.palle2patnam.utils.JsonParser;
 import com.lancius.palle2patnam.utils.SessionManager;
 import com.lancius.palle2patnam.utils.WebServices;
@@ -105,6 +107,9 @@ public class CategoryListActivity extends AppCompatActivity {
         categoryId = user.get(session.KEY_CAT_ID);
         String page_title = user.get(session.KEY_CAT_NAME);
 
+        Log.d("CATID", categoryId);
+
+
         catTilteTv = (TextView) findViewById(R.id.toolbar_title);
         catTilteTv.setText(page_title);
 
@@ -133,7 +138,13 @@ public class CategoryListActivity extends AppCompatActivity {
             bottomLayout.setVisibility(View.VISIBLE);
         }
 
-        new categoryDetails().execute();
+        if (CommonUtilities.checkConn(getApplicationContext())) {
+            new categoryDetails().execute();
+        } else {
+            Constants.intent = new Intent(getApplicationContext(),
+                    NoNetworkActivity.class);
+            startActivity(Constants.intent);
+        }
 
         ImageView next = (ImageView) findViewById(R.id.categiries_next_view);
         next.setOnClickListener(new View.OnClickListener() {
@@ -743,7 +754,6 @@ public class CategoryListActivity extends AppCompatActivity {
 
         add_price.setText("" + result);
     }
-
 
     public class WeightListAdapter extends BaseAdapter {
 

@@ -22,23 +22,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.lancius.palle2patnam.R;
 import com.lancius.palle2patnam.adapter.SlidingImageAdapter;
-import com.lancius.palle2patnam.service.MyVolley;
 import com.lancius.palle2patnam.utils.CirclePageIndicator;
 import com.lancius.palle2patnam.utils.CommonUtilities;
 import com.lancius.palle2patnam.utils.Constants;
@@ -52,21 +43,31 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import static com.lancius.palle2patnam.utils.Constants.productsList;
 import static com.lancius.palle2patnam.utils.Constants.session;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    static final String TAG_BANNER_IMAGE = "image";
-    static final String TAG_UPCOMING_BANNER_IMAGE = "image";
-    static final String TAG_ID = "id";
+    private static final String TAG_BANNER_IMAGE = "image";
+    static final String TAG_SUCCESS = "success";
+    private static final String TAG_CATEGORY_ID = "id";
+    private static final String TAG_CATEGORY_NAME = "category_name";
+    private static final String TAG_CATEGORY_IMAGE = "category_image";
+    static final String TAG_RESULTS = "lists";
+
+    static final String TAG_CATEGORY_PRODUCT_ID = "id";
+    static final String TAG_CATEGORY_PRODUCT_NAME = "product_name";
+    static final String TAG_CATEGORY_PRODUCT_PRICE = "price";
+    static final String TAG_CATEGORY_PRODUCT_PRICE_ID = "price_id";
+    static final String TAG_CATEGORY_PRODUCT_WEIGHT_ID = "weight_type_id";
+    static final String TAG_CATEGORY_PRODUCT_WEIGHT = "weight_type";
+    static final String TAG_CATEGORY_PRODUCT_IMAGE = "image";
 
     private static ViewPager mPager;
     private static int currentPage = 0;
@@ -74,26 +75,19 @@ public class MainActivity extends AppCompatActivity
 
     Context activity;
     HLVAdapter mAdapter;
+    NewlyHLVAdapter newlyAdapter;
 
     ArrayList<String> imagesList;
-    ArrayList<HashMap<String, String>> bannerList;
+    ArrayList<HashMap<String, String>> bannerList, productsList, specialProductsList;
     JSONArray products = null;
     JsonParser jsonParser = new JsonParser();
-    ProgressDialog pDialog;
+    ProgressDialog pDialog, nDialog, tDialog;
     JSONArray result = null;
 
-    static final String TAG_SUCCESS = "success";
-    static final String TAG_CATEGORY_ID = "id";
-    static final String TAG_CATEGORY_NAME = "category_name";
-    static final String TAG_CATEGORY_IMAGE = "category_image";
-    static final String TAG_RESULTS = "lists";
-
     String banner_image, message, categoryName, categoryImage, categoryId;
-    RecyclerView mRecyclerView;
-    ListView listView;
-    IconAdapter dataAdapter;
-    ImageView imageview;
-    ProgressDialog progressDialog;
+    RecyclerView mRecyclerView, newlyRecyclerView, topRecyclerView;
+
+    ArrayList<String> priceList, weightList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,22 +95,15 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         session = new SessionManager(getApplicationContext());
-        HashMap<String, String> user = session.getUserDetails();
-        String username = user.get(SessionManager.KEY_NAME);
-        String email = user.get(SessionManager.KEY_EMAIL);
+
+        priceList = new ArrayList<>();
+        weightList = new ArrayList<>();
         imagesList = new ArrayList<String>();
-        productsList = new ArrayList<>();
+        productsList = new ArrayList<HashMap<String, String>>();
+        specialProductsList = new ArrayList<HashMap<String, String>>();
         bannerList = new ArrayList<HashMap<String, String>>();
-        final String token = com.lancius.palle2patnam.activity.SharedPrefManager.getInstance(this).getDeviceToken();
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -124,18 +111,14 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-//        TextView navUsernameTv = (TextView) findViewById(R.id.nav_username);
-//        navUsernameTv.setText(username);
-//        TextView navUseremailTv = (TextView) findViewById(R.id.nav_user_email);
-//        navUseremailTv.setText(email);
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         if (CommonUtilities.checkConn(getApplicationContext())) {
 
             new gettingBanners().execute();
             new categoryDetail().execute();
-            new gettingUpcomingBanner().execute();
+            new newlyAddedProducts().execute();
+            new topSelledProducts().execute();
 
         } else {
 
@@ -346,21 +329,22 @@ public class MainActivity extends AppCompatActivity
 
                     if (success == 0) {
 
+                        productsList.clear();
+
                         result = json.getJSONArray(TAG_RESULTS);
 
                         for (int i = 0; i < result.length(); i++) {
                             JSONObject c = result.getJSONObject(i);
                             // successfully created product
-                            categoryName = c.getString(TAG_CATEGORY_NAME);
-                            categoryImage = c.getString(TAG_CATEGORY_IMAGE);
-                            categoryId = c.getString(TAG_CATEGORY_ID);
-
+                            String categoryName = c.getString(TAG_CATEGORY_NAME);
+                            String categoryImage = c.getString(TAG_CATEGORY_IMAGE);
+                            String categoryId = c.getString(TAG_CATEGORY_ID);
 
                             HashMap<String, String> map = new HashMap<>();
+
                             map.put(TAG_CATEGORY_NAME, categoryName);
                             map.put(TAG_CATEGORY_IMAGE, categoryImage);
                             map.put(TAG_CATEGORY_ID, categoryId);
-
 
                             productsList.add(map);
 
@@ -414,18 +398,14 @@ public class MainActivity extends AppCompatActivity
             mAdapter = new HLVAdapter(MainActivity.this, productsList);
             mRecyclerView.setAdapter(mAdapter);
 
-
         }
 
     }
 
     public class HLVAdapter extends RecyclerView.Adapter<HLVAdapter.ViewHolder> {
 
-
-        Context context;
         HashMap<String, String> resultp = new HashMap<String, String>();
         ArrayList<HashMap<String, String>> data;
-
 
         public HLVAdapter(Activity activity2,
                           ArrayList<HashMap<String, String>> productsList) {
@@ -457,25 +437,27 @@ public class MainActivity extends AppCompatActivity
 
             holder.itemView.setOnClickListener(
                     new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+                        @Override
+                        public void onClick(View v) {
 
-                    resultp = data.get(position);
-                    categoryId = resultp.get(MainActivity.TAG_CATEGORY_ID);
-                    categoryName = resultp.get(MainActivity.TAG_CATEGORY_NAME);
-                    session.storeCatId(categoryId, categoryName);
+                            resultp = data.get(position);
 
-                    if (categoryId.equals("1")) {
-                        Log.d("position", "" + position);
-                        Intent i = new Intent(getApplicationContext(), MilkCategoryActivity.class);
-                        startActivity(i);
-                    } else {
-                        Log.d("position", "" + position);
-                        Intent i = new Intent(getApplicationContext(), CategoryListActivity.class);
-                        startActivity(i);
-                    }
-                }
-            });
+                            categoryId = resultp.get(MainActivity.TAG_CATEGORY_ID);
+                            categoryName = resultp.get(MainActivity.TAG_CATEGORY_NAME);
+                            Toast.makeText(activity, categoryId, Toast.LENGTH_SHORT).show();
+                            session.storeCatId(categoryId, categoryName);
+
+                            if (categoryId.equals("1")) {
+                                Log.d("position", "" + position);
+                                Intent i = new Intent(getApplicationContext(), MilkCategoryActivity.class);
+                                startActivity(i);
+                            } else {
+                                Log.d("position", "" + position);
+                                Intent i = new Intent(getApplicationContext(), CategoryListActivity.class);
+                                startActivity(i);
+                            }
+                        }
+                    });
         }
 
         @Override
@@ -501,9 +483,9 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    class gettingUpcomingBanner extends AsyncTask<String, String, String> {
+    class newlyAddedProducts extends AsyncTask<String, String, String> {
         /**
-         * Before starting background thread Show Progress Dialog
+         * Before starting background thread Show Progress Dialog'5 9+\789+\789+
          */
         @Override
         protected void onPreExecute() {
@@ -511,21 +493,21 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        @Override
+        /**
+         * Creating Application
+         */
         protected String doInBackground(String... args) {
-            // TODO Auto-generated method stub
-
-            // area=locationlabel;
 
             // Building Parameters
             List<NameValuePair> params = new ArrayList<NameValuePair>();
 
+            // getting JSON Object
+            // Note that create product url accepts POST method
             JSONObject json = null;
             try {
                 try {
 
-                    json = jsonParser.makeHttpRequest(WebServices.HOME_BANNERS_API, "POST",
-                            params);
+                    json = jsonParser.makeHttpRequest(WebServices.RECENT_PRODUCTS_URL, "POST", params);
 
                 } catch (JSONException e1) {
                     // TODO Auto-generated catch block
@@ -533,35 +515,46 @@ public class MainActivity extends AppCompatActivity
                 }
 
                 // check log cat fro response
-                Log.d("Special Create Response", json.toString());
+                Log.d("Create Order Response", json.toString());
 
+                // check for success tag
                 try {
                     int success = json.getInt(TAG_SUCCESS);
 
                     if (success == 0) {
 
-                        products = json.getJSONArray(TAG_RESULTS);
-                        for (int i = 0; i < products.length(); i++) {
+                        specialProductsList.clear();
 
-                            JSONObject c = products.getJSONObject(i);
+                        result = json.getJSONArray(TAG_RESULTS);
 
-                            String id = c.getString(TAG_ID);
-                            String image = c.getString(TAG_UPCOMING_BANNER_IMAGE);
+                        for (int i = 0; i < result.length(); i++) {
+                            JSONObject c = result.getJSONObject(i);
+                            // successfully created product
+                            String productId = c.getString(TAG_CATEGORY_PRODUCT_ID);
+                            String productName = c.getString(TAG_CATEGORY_PRODUCT_NAME);
+                            String productPrice = c.getString(TAG_CATEGORY_PRODUCT_PRICE);
+                            String productPriceId = c.getString(TAG_CATEGORY_PRODUCT_PRICE_ID);
+                            String productWeight = c.getString(TAG_CATEGORY_PRODUCT_WEIGHT);
+                            String productWeightId = c.getString(TAG_CATEGORY_PRODUCT_WEIGHT_ID);
+                            String productImage = c.getString(TAG_CATEGORY_PRODUCT_IMAGE);
 
-                            HashMap<String, String> map = new HashMap<String, String>();
+                            HashMap<String, String> map = new HashMap<>();
+                            map.put(TAG_CATEGORY_PRODUCT_ID, productId);
+                            map.put(TAG_CATEGORY_PRODUCT_NAME, productName);
+                            map.put(TAG_CATEGORY_PRODUCT_PRICE, productPrice);
+                            map.put(TAG_CATEGORY_PRODUCT_PRICE_ID, productPriceId);
+                            map.put(TAG_CATEGORY_PRODUCT_WEIGHT, productWeight);
+                            map.put(TAG_CATEGORY_PRODUCT_WEIGHT_ID, productWeightId);
+                            map.put(TAG_CATEGORY_PRODUCT_IMAGE, productImage);
 
-                            map.put(TAG_ID, id);
-                            map.put(TAG_UPCOMING_BANNER_IMAGE, image);
 
-                            bannerList.add(map);
+                            specialProductsList.add(map);
 
                         }
-
                     } else {
-
+                        // failed to create product
                         message = json.getString("message");
                         showToast();
-
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -571,7 +564,7 @@ public class MainActivity extends AppCompatActivity
 
                 runOnUiThread(new Runnable() {
                     public void run() {
-                        message = "Server error please try again later";
+                        message = "Server Error..Please Try Again Later..";
                         showToast();
                     }
                 });
@@ -584,8 +577,8 @@ public class MainActivity extends AppCompatActivity
             // TODO Auto-generated method stub
             runOnUiThread(new Runnable() {
                 public void run() {
-                    Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT)
-                            .show();
+                    Toast.makeText(MainActivity.this, message,
+                            Toast.LENGTH_LONG).show();
                 }
             });
         }
@@ -596,114 +589,223 @@ public class MainActivity extends AppCompatActivity
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once done
 
-            if (!bannerList.isEmpty()) {
+            newlyRecyclerView = (RecyclerView) findViewById(R.id.newly_added_recycler_view);
+            newlyRecyclerView.setHasFixedSize(true);
 
-                Log.d("LOOP CHECKING", "Inside");
-                listView = (ListView) findViewById(R.id.upcoming_banner_listview);
+            // The number of Columns
+            LinearLayoutManager mLayoutManager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
+            newlyRecyclerView.setLayoutManager(mLayoutManager);
 
-                dataAdapter = new IconAdapter(MainActivity.this,
-                        bannerList);
-                dataAdapter.notifyDataSetChanged();
-                listView.setAdapter(dataAdapter);
-                setListViewHeightBasedOnChildren(listView);
+            newlyAdapter = new NewlyHLVAdapter(MainActivity.this, specialProductsList);
+            newlyRecyclerView.setAdapter(newlyAdapter);
 
-            } else {
+
+        }
+
+    }
+
+    public class NewlyHLVAdapter extends RecyclerView.Adapter<NewlyHLVAdapter.ViewHolder> {
+
+        HashMap<String, String> resultp = new HashMap<String, String>();
+        ArrayList<HashMap<String, String>> data;
+
+
+        public NewlyHLVAdapter(Activity activity2,
+                               ArrayList<HashMap<String, String>> productsList) {
+            // TODO Auto-generated constructor stub
+
+            activity = activity2;
+            data = productsList;
+        }
+
+        @Override
+        public NewlyHLVAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+            View v = LayoutInflater.from(activity)
+                    .inflate(R.layout.home_product_list_item, viewGroup, false);
+            NewlyHLVAdapter.ViewHolder viewHolder = new NewlyHLVAdapter.ViewHolder(v);
+            return viewHolder;
+        }
+
+        @Override
+        public void onBindViewHolder(ViewHolder holder, final int position) {
+
+            resultp = data.get(position);
+
+            priceList.clear();
+            weightList.clear();
+
+            String price_type = resultp.get(CategoryListActivity.TAG_CATEGORY_PRODUCT_PRICE);
+            ArrayList aListType = new ArrayList(Arrays.asList(price_type.split(",")));
+            for (int i = 0; i < aListType.size(); i++) {
+                priceList.add(aListType.get(i).toString());
+            }
+
+            String weight_type = resultp.get(CategoryListActivity.TAG_CATEGORY_PRODUCT_WEIGHT);
+            ArrayList aList = new ArrayList(Arrays.asList(weight_type.split(",")));
+            for (int i = 0; i < aList.size(); i++) {
+                weightList.add(aList.get(i).toString());
+            }
+
+            holder.tvWeight.setText(" - " + weightList.get(0));
+            holder.tvPrice.setText("Rs. " + priceList.get(0));
+            holder.tvSpecies.setText(resultp.get(MainActivity.TAG_CATEGORY_PRODUCT_NAME));
+            Glide.with(activity).load(resultp.get(MainActivity.TAG_CATEGORY_PRODUCT_IMAGE))
+                    .thumbnail(0.5f)
+                    .crossFade()
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .into(holder.imgThumbnail);
+
+            holder.itemView.setOnClickListener(
+                    new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+
+
+                        }
+                    });
+        }
+
+        @Override
+        public int getItemCount() {
+            return data.size();
+        }
+
+        public class ViewHolder extends RecyclerView.ViewHolder {
+
+            public ImageView imgThumbnail;
+            public TextView tvSpecies, tvWeight, tvPrice;
+
+            public ViewHolder(final View itemView) {
+                super(itemView);
+
+                tvSpecies = (TextView) itemView.findViewById(R.id.home_list_item_title);
+                tvWeight = (TextView) itemView.findViewById(R.id.home_list_item_weight);
+                tvPrice = (TextView) itemView.findViewById(R.id.home_list_item_selling_price);
+                imgThumbnail = (ImageView) itemView.findViewById(R.id.home_list_item_image);
 
             }
 
         }
+
     }
 
-    public static void setListViewHeightBasedOnChildren(ListView listView) {
-        ListAdapter listAdapter = listView.getAdapter();
-        if (listAdapter == null)
-            return;
-
-        int desiredWidth = View.MeasureSpec.makeMeasureSpec(listView.getWidth(), View.MeasureSpec.UNSPECIFIED);
-        int totalHeight = 0;
-        View view = null;
-        for (int i = 0; i < listAdapter.getCount(); i++) {
-            view = listAdapter.getView(i, view, listView);
-            if (i == 0)
-                view.setLayoutParams(new ViewGroup.LayoutParams(desiredWidth, Toolbar.LayoutParams.WRAP_CONTENT));
-
-            view.measure(desiredWidth, View.MeasureSpec.UNSPECIFIED);
-            totalHeight += view.getMeasuredHeight();
-        }
-        ViewGroup.LayoutParams params = listView.getLayoutParams();
-        params.height = totalHeight + (listView.getHeight() * (listAdapter.getCount() - 1));
-
-        //params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
-        listView.setLayoutParams(params);
-    }
-
-    public class IconAdapter extends BaseAdapter {
-
-        Context activity;
-        LayoutInflater inflater;
-        ArrayList<HashMap<String, String>> data;
-
-        HashMap<String, String> resultp = new HashMap<String, String>();
-
-        public IconAdapter(MainActivity activity,
-                           ArrayList<HashMap<String, String>> bannerList) {
-            // TODO Auto-generated constructor stub
-
-            this.activity = activity;
-            data = bannerList;
-        }
-
+    class topSelledProducts extends AsyncTask<String, String, String> {
+        /**
+         * Before starting background thread Show Progress Dialog'5 9+\789+\789+
+         */
         @Override
-        public int getCount() {
-            // TODO Auto-generated method stub
-            return data.size();
+        protected void onPreExecute() {
+            super.onPreExecute();
+
         }
 
-        @Override
-        public Object getItem(int position) {
-            // TODO Auto-generated method stub
+        /**
+         * Creating Application
+         */
+        protected String doInBackground(String... args) {
+
+            // Building Parameters
+            List<NameValuePair> params = new ArrayList<NameValuePair>();
+
+            // getting JSON Object
+            // Note that create product url accepts POST method
+            JSONObject json = null;
+            try {
+                try {
+
+                    json = jsonParser.makeHttpRequest(WebServices.MOST_VIEWED_URL, "POST", params);
+
+                } catch (JSONException e1) {
+                    // TODO Auto-generated catch block
+                    // e1.printStackTrace();
+                }
+
+                // check log cat fro response
+                Log.d("Create Order Response", json.toString());
+
+                // check for success tag
+                try {
+                    int success = json.getInt(TAG_SUCCESS);
+
+                    if (success == 0) {
+
+                        specialProductsList.clear();
+
+                        result = json.getJSONArray(TAG_RESULTS);
+
+                        for (int i = 0; i < result.length(); i++) {
+                            JSONObject c = result.getJSONObject(i);
+                            // successfully created product
+                            String productId = c.getString(TAG_CATEGORY_PRODUCT_ID);
+                            String productName = c.getString(TAG_CATEGORY_PRODUCT_NAME);
+                            String productPrice = c.getString(TAG_CATEGORY_PRODUCT_PRICE);
+                            String productPriceId = c.getString(TAG_CATEGORY_PRODUCT_PRICE_ID);
+                            String productWeight = c.getString(TAG_CATEGORY_PRODUCT_WEIGHT);
+                            String productWeightId = c.getString(TAG_CATEGORY_PRODUCT_WEIGHT_ID);
+                            String productImage = c.getString(TAG_CATEGORY_PRODUCT_IMAGE);
+
+                            HashMap<String, String> map = new HashMap<>();
+                            map.put(TAG_CATEGORY_PRODUCT_ID, productId);
+                            map.put(TAG_CATEGORY_PRODUCT_NAME, productName);
+                            map.put(TAG_CATEGORY_PRODUCT_PRICE, productPrice);
+                            map.put(TAG_CATEGORY_PRODUCT_PRICE_ID, productPriceId);
+                            map.put(TAG_CATEGORY_PRODUCT_WEIGHT, productWeight);
+                            map.put(TAG_CATEGORY_PRODUCT_WEIGHT_ID, productWeightId);
+                            map.put(TAG_CATEGORY_PRODUCT_IMAGE, productImage);
+
+                            specialProductsList.add(map);
+
+                        }
+                    } else {
+                        // failed to create product
+                        message = json.getString("message");
+                        showToast();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            } catch (StringIndexOutOfBoundsException e) {
+
+                runOnUiThread(new Runnable() {
+                    public void run() {
+                        message = "Server Error..Please Try Again Later..";
+                        showToast();
+                    }
+                });
+            }
+
             return null;
         }
 
-        @Override
-        public long getItemId(int position) {
+        private void showToast() {
             // TODO Auto-generated method stub
-            return 0;
-        }
-
-        @Override
-        public View getView(final int position, View convertView,
-                            ViewGroup parent) {
-            // TODO Auto-generated method stub
-
-            inflater = (LayoutInflater) activity
-                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            final View itemView = inflater.inflate(R.layout.banner_list_item,
-                    parent, false);
-
-            resultp = data.get(position);
-
-            Log.d("Special Image", resultp.get(MainActivity.TAG_UPCOMING_BANNER_IMAGE));
-
-            imageview = (ImageView) itemView.findViewById(R.id.image_banner);
-
-            Glide.with(activity).load(resultp.get(MainActivity.TAG_UPCOMING_BANNER_IMAGE))
-                    .thumbnail(0.5f)
-                    .crossFade()
-                    .diskCacheStrategy(DiskCacheStrategy.ALL)
-                    .into(imageview);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    // TODO Auto-generated method stub
-
-                    resultp = data.get(position);
+            runOnUiThread(new Runnable() {
+                public void run() {
+                    Toast.makeText(MainActivity.this, message,
+                            Toast.LENGTH_LONG).show();
                 }
             });
-            return itemView;
         }
+
+        /**
+         * After completing background task Dismiss the progress dialog
+         **/
+        protected void onPostExecute(String file_url) {
+            // dismiss the dialog once done
+            
+            topRecyclerView = (RecyclerView) findViewById(R.id.top_selled_recycler_view);
+            topRecyclerView.setHasFixedSize(true);
+
+            // The number of Columns
+            LinearLayoutManager mLayoutManager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
+            topRecyclerView.setLayoutManager(mLayoutManager);
+
+            newlyAdapter = new NewlyHLVAdapter(MainActivity.this, specialProductsList);
+            topRecyclerView.setAdapter(newlyAdapter);
+
+        }
+
     }
 
     @Override
@@ -780,4 +882,5 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

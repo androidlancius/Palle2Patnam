@@ -11,6 +11,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -52,7 +53,7 @@ import java.util.TimerTask;
 import static com.lancius.palle2patnam.utils.Constants.session;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, SwipeRefreshLayout.OnRefreshListener {
 
     private static final String TAG_BANNER_IMAGE = "image";
     static final String TAG_SUCCESS = "success";
@@ -88,6 +89,7 @@ public class MainActivity extends AppCompatActivity
     RecyclerView mRecyclerView, newlyRecyclerView, topRecyclerView;
 
     ArrayList<String> priceList, weightList;
+    SwipeRefreshLayout mySwipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,6 +129,34 @@ public class MainActivity extends AppCompatActivity
             startActivity(Constants.intent);
 
         }
+
+        mySwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
+//
+//        swipeRefreshLayout.setOnRefreshListener(this);
+
+        mySwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                mySwipeRefreshLayout.setRefreshing(true);
+                if (CommonUtilities.checkConn(getApplicationContext())) {
+
+                    new gettingBanners().execute();
+                    new categoryDetail().execute();
+                    new newlyAddedProducts().execute();
+                    new topSelledProducts().execute();
+
+                } else {
+
+                    Constants.intent = new Intent(getApplicationContext(),
+                            NoNetworkActivity.class);
+                    startActivity(Constants.intent);
+
+                }
+            }
+        });
+//
+
+
     }
 
     class gettingBanners extends AsyncTask<String, String, String> {
@@ -255,7 +285,7 @@ public class MainActivity extends AppCompatActivity
                     public void run() {
                         handler.post(Update);
                     }
-                }, 2000, 2000);
+                }, 3000, 5000);
 
                 // Pager listener over indicator
                 indicator
@@ -444,7 +474,7 @@ public class MainActivity extends AppCompatActivity
 
                             categoryId = resultp.get(MainActivity.TAG_CATEGORY_ID);
                             categoryName = resultp.get(MainActivity.TAG_CATEGORY_NAME);
-                            Toast.makeText(activity, categoryId, Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(activity, categoryId, Toast.LENGTH_SHORT).show();
                             session.storeCatId(categoryId, categoryName);
 
                             if (categoryId.equals("1")) {
@@ -793,7 +823,7 @@ public class MainActivity extends AppCompatActivity
          **/
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once done
-            
+
             topRecyclerView = (RecyclerView) findViewById(R.id.top_selled_recycler_view);
             topRecyclerView.setHasFixedSize(true);
 
@@ -843,6 +873,28 @@ public class MainActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onRefresh() {
+
+        mySwipeRefreshLayout.setRefreshing(false);
+        if (CommonUtilities.checkConn(getApplicationContext())) {
+
+            new gettingBanners().execute();
+            new categoryDetail().execute();
+            new newlyAddedProducts().execute();
+            new topSelledProducts().execute();
+
+        } else {
+
+            Constants.intent = new Intent(getApplicationContext(),
+                    NoNetworkActivity.class);
+            startActivity(Constants.intent);
+
+        }
+
+
     }
 
     @SuppressWarnings("StatementWithEmptyBody")

@@ -63,8 +63,8 @@ public class CartActivity extends AppCompatActivity {
     static final String TAG_WEIGHT = "weight";
     static final String TAG_ITEMS = "items";
 
-    String prod_id, weight_count, qty, price_count, from;
-    static ArrayList<String> categoryIdList, categoryCountList, categoryPriceList, categoryWeightList, priceList, weightList;
+    String prod_id, weight_count, qty, price_count, prod_names, from;
+    static ArrayList<String> categoryIdList, categoryCountList, categoryPriceList, categoryWeightList, categoryNamesList, weightList;
     Double final_price = 0.00;
     private Toolbar toolbar;
     DatabaseHandler db;
@@ -94,6 +94,7 @@ public class CartActivity extends AppCompatActivity {
         categoryIdList = new ArrayList<>();
         categoryPriceList = new ArrayList<>();
         categoryWeightList = new ArrayList<>();
+        categoryNamesList = new ArrayList<>();
 
         Constants.session = new SessionManager(getApplicationContext());
 
@@ -119,23 +120,8 @@ public class CartActivity extends AppCompatActivity {
             categoryPriceList.add(price);
             String weight = cn.getWeight();
             categoryWeightList.add(weight);
-
-
         }
 
-        StringBuilder sb1 = new StringBuilder();
-        for (int i = 0; i < categoryIdList.size(); i++) {
-
-            if (categoryIdList.size() - 1 == i) {
-                sb1.append(categoryIdList.get(i));
-            } else {
-                sb1.append(categoryIdList.get(i));
-                sb1.append(",");
-            }
-        }
-
-        // Log.d("CAT ID", sb1.toString());
-        prod_id = sb1.toString();
 
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < categoryCountList.size(); i++) {
@@ -148,7 +134,7 @@ public class CartActivity extends AppCompatActivity {
         }
 
         qty = sb.toString();
-        // Log.d("QTY", sb.toString());
+        Log.d("QTY", sb.toString());
 
         StringBuilder sb2 = new StringBuilder();
         for (int i = 0; i < categoryPriceList.size(); i++) {
@@ -161,6 +147,7 @@ public class CartActivity extends AppCompatActivity {
         }
 
         price_count = sb2.toString();
+        Log.d("PRICES", sb2.toString());
 
         StringBuilder sb3 = new StringBuilder();
         for (int i = 0; i < categoryWeightList.size(); i++) {
@@ -173,8 +160,22 @@ public class CartActivity extends AppCompatActivity {
         }
 
         weight_count = sb3.toString();
+        Log.d("WEGHTS", sb3.toString());
 
-        //Log.d("PRICE", sb2.toString());
+        StringBuilder sb1 = new StringBuilder();
+        for (int i = 0; i < categoryIdList.size(); i++) {
+
+            if (categoryIdList.size() - 1 == i) {
+                sb1.append(categoryIdList.get(i));
+            } else {
+                sb1.append(categoryIdList.get(i));
+                sb1.append(",");
+            }
+        }
+
+        Log.d("CATGID", sb1.toString());
+        prod_id = sb1.toString();
+
 
         if (CommonUtilities.checkConn(getApplicationContext())) {
 
@@ -194,16 +195,25 @@ public class CartActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
 
-                // Toast.makeText(getApplicationContext(), "" + success, Toast.LENGTH_SHORT).show();
+                StringBuilder sb4 = new StringBuilder();
+                for (int i = 0; i < categoryNamesList.size(); i++) {
+                    if (categoryNamesList.size() - 1 == i) {
+                        sb4.append(categoryNamesList.get(i));
+                    } else {
+                        sb4.append(categoryNamesList.get(i));
+                        sb4.append(",");
+                    }
+                }
+                prod_names = sb4.toString();
+                Log.d("PRODNAMES", sb4.toString());
 
                 Intent i = new Intent(getApplicationContext(),
                         OrderPayment.class);
-                session.storeCartDetails(price_count, prod_id, qty, "" + final_price);
+                session.storeCartDetails(price_count, prod_id, qty, weight_count, prod_names, "" + final_price);
                 startActivity(i);
 
             }
         });
-
 
     }
 
@@ -271,6 +281,9 @@ public class CartActivity extends AppCompatActivity {
                             weight = c.getString(TAG_WEIGHT);
                             items = c.getString(TAG_ITEMS);
                             image = c.getString(TAG_IMAGE);
+
+                            categoryNamesList.add(product_name);
+                            categoryIdList.add(product_id);
 
                             HashMap<String, String> map = new HashMap<String, String>();
 
@@ -423,6 +436,7 @@ public class CartActivity extends AppCompatActivity {
             img_plus = (ImageView) v.findViewById(R.id.cart_plus_img);
             img_minus = (ImageView) v.findViewById(R.id.cart_minus_img);
 
+
             txt_prod_header.setText("fresh");
             txt_prod_name.setText(resultp.get(CartActivity.TAG_PRODUCT_NAME));
             txt_prod_weight.setText("Weight : "
@@ -435,7 +449,7 @@ public class CartActivity extends AppCompatActivity {
             Double total_price = db.getTotalPrice();
             totalPrice(total_price);
 
-            prod_id = resultp.get(CartActivity.TAG_ID);
+            String prod_id = resultp.get(CartActivity.TAG_ID);
             String image = db.getProductImage(prod_id);
             Log.d("CartImage", image);
             Glide.with(activity).load(image)

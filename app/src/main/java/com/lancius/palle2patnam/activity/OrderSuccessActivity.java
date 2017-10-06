@@ -54,12 +54,28 @@ public class OrderSuccessActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(i);
+
+        finish();
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // TODO Auto-generated method stub
         switch (item.getItemId()) {
             case android.R.id.home:
                 // app icon in action bar clicked; goto parent activity.
-                this.finish();
+
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
+
+                finish();
+
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

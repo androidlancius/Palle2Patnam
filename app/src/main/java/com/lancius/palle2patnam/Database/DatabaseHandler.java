@@ -211,8 +211,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 sumPriceList.add(tprice);
                 sumQtyList.add(qty);
 
-                Log.d("QTYSIZE", "" + sumQtyList.size());
-                Log.d("PRICESIZE", "" + sumPriceList.size());
+//                Log.d("QTYSIZE", "" + sumQtyList.size());
+//                Log.d("PRICESIZE", "" + sumPriceList.size());
 
                 cursor.moveToNext();
             }
@@ -223,7 +223,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             String price = sumPriceList.get(i);
             String qty = sumQtyList.get(i);
             total_price = Double.parseDouble(price) * Integer.parseInt(qty) + total_price;
-            Log.d("SUMTOTAL", "" + total_price);
+//            Log.d("SUMTOTAL", "" + total_price);
         }
 
 

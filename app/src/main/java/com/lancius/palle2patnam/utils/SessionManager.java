@@ -38,10 +38,12 @@ public class SessionManager {
 
     public static final String KEY_TOTAL_AMOUNT = "total_amount";
 
-    public static final String KEY_CART_IND_AMOUNT = "amount";
-    public static final String KEY_CART_TOTAL_AMOUNT = "total";
-    public static final String KEY_CART_PRODUCT_ID = "id";
-    public static final String KEY_CART_ITEMS = "items";
+    public static final String KEY_CART_PRODUCT_PRICE = "cart_price";
+    public static final String KEY_CART_TOTAL_AMOUNT = "cart_total";
+    public static final String KEY_CART_PRODUCT_ID = "cart_prod_id";
+    public static final String KEY_CART_PRODUCT_QTY = "cart_quantity";
+    public static final String KEY_CART_PRODUCT_WEIGHT = "cart_weight";
+    public static final String KEY_CART_PRODUCT_NAMES = "cart_names";
 
     // Constructor
     public SessionManager(Context context) {
@@ -109,10 +111,12 @@ public class SessionManager {
 
         user.put(KEY_TOTAL_AMOUNT, lpref.getString(KEY_TOTAL_AMOUNT, null));
 
-        user.put(KEY_CART_IND_AMOUNT, lpref.getString(KEY_CART_IND_AMOUNT, null));
+        user.put(KEY_CART_PRODUCT_PRICE, lpref.getString(KEY_CART_PRODUCT_PRICE, null));
         user.put(KEY_CART_TOTAL_AMOUNT, lpref.getString(KEY_CART_TOTAL_AMOUNT, null));
         user.put(KEY_CART_PRODUCT_ID, lpref.getString(KEY_CART_PRODUCT_ID, null));
-        user.put(KEY_CART_ITEMS, lpref.getString(KEY_CART_ITEMS, null));
+        user.put(KEY_CART_PRODUCT_QTY, lpref.getString(KEY_CART_PRODUCT_QTY, null));
+        user.put(KEY_CART_PRODUCT_WEIGHT, lpref.getString(KEY_CART_PRODUCT_WEIGHT, null));
+        user.put(KEY_CART_PRODUCT_NAMES, lpref.getString(KEY_CART_PRODUCT_NAMES, null));
 
         // return user
         return user;
@@ -140,11 +144,13 @@ public class SessionManager {
         leditor.commit();
     }
 
-    public void storeCartDetails(String amount, String id, String items, String total) {
+    public void storeCartDetails(String prod_price, String prod_id, String quantities, String weights, String prod_names,String total) {
         // TODO Auto-generated method stub
-        leditor.putString(KEY_CART_IND_AMOUNT, amount);
-        leditor.putString(KEY_CART_PRODUCT_ID, id);
-        leditor.putString(KEY_CART_ITEMS, items);
+        leditor.putString(KEY_CART_PRODUCT_PRICE, prod_price);
+        leditor.putString(KEY_CART_PRODUCT_ID, prod_id);
+        leditor.putString(KEY_CART_PRODUCT_QTY, quantities);
+        leditor.putString(KEY_CART_PRODUCT_WEIGHT, weights);
+        leditor.putString(KEY_CART_PRODUCT_NAMES, prod_names);
         leditor.putString(KEY_CART_TOTAL_AMOUNT, total);
         leditor.commit();
     }

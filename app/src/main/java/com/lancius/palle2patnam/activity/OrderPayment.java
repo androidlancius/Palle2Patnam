@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -42,7 +43,7 @@ import static com.lancius.palle2patnam.utils.WebServices.PLACE_ORDER_URL;
 
 public class OrderPayment extends AppCompatActivity {
 
-    String type_of_payment = "0", address_id, slot_date, slot_time, total_cart_price, total_items;
+    String type_of_payment = "0", total_weights, slot_date, slot_time, total_cart_price, total_items;
     TextView payment_no_of_orders_tv, payment_selected_date_tv, payment_selected_time_tv,
             payment_cart_amount_tv, payment_delivery_cahsrges_tv, payment_tax_tv, delivery_total_amount_cash_price;
     Button delivery_address_payment_btn, pay_onlinebtn, cash_on_deliverybtn;
@@ -53,7 +54,7 @@ public class OrderPayment extends AppCompatActivity {
 
     ArrayList<HashMap<String, String>> productsList;
 
-    String cart_price, message, address, mobile, name, order_id, total_price, user_id, product_id, product_quantity, product_price, items;
+    String cart_price, message, address, mobile, name, order_id, prod_names, user_id, product_id, product_quantity, product_price, items;
 
     private static final String TAG_SUCCESS = "success";
     static final String TAG_ORDER_ID = "order_id";
@@ -92,10 +93,13 @@ public class OrderPayment extends AppCompatActivity {
         mobile = user.get(SessionManager.KEY_PHONE);
 
         total_cart_price = user.get(SessionManager.KEY_CART_TOTAL_AMOUNT);
-        cart_price = user.get(SessionManager.KEY_CART_IND_AMOUNT);
+        cart_price = user.get(SessionManager.KEY_CART_PRODUCT_PRICE);
         product_id = user.get(SessionManager.KEY_CART_PRODUCT_ID);
-        total_items = user.get(SessionManager.KEY_CART_ITEMS);
+        total_items = user.get(SessionManager.KEY_CART_PRODUCT_QTY);
+        total_weights = user.get(SessionManager.KEY_CART_PRODUCT_WEIGHT);
+        prod_names = user.get(SessionManager.KEY_CART_PRODUCT_NAMES);
 
+        Log.d("CARTDATA`", "PRICE : " + cart_price + "ID : " + product_id + "QTY : " + total_items + "WEIGHTS : " + total_weights + "NAMES : " + prod_names + "TOTAL PRICE : " + total_cart_price);
 
         payment_no_of_orders_tv = (TextView) findViewById(R.id.payment_no_of_orders_tv);
         payment_selected_date_tv = (TextView) findViewById(R.id.payment_selected_date_tv);
@@ -186,6 +190,8 @@ public class OrderPayment extends AppCompatActivity {
             params.add(new BasicNameValuePair("product_quantity", total_items));
             params.add(new BasicNameValuePair("order_total", total_cart_price));
             params.add(new BasicNameValuePair("product_price", cart_price));
+            params.add(new BasicNameValuePair("product_weight", total_weights));
+            params.add(new BasicNameValuePair("product_name", prod_names ));
             params.add(new BasicNameValuePair("address", address));
             params.add(new BasicNameValuePair("name", name));
             params.add(new BasicNameValuePair("mobile", mobile));
@@ -215,7 +221,7 @@ public class OrderPayment extends AppCompatActivity {
 
                         order_id = json.getString(TAG_ORDER_ID);
 
-                        db.deleteAll();
+//                        db.deleteAll();
 
                         Constants.intent = new Intent(getApplicationContext(), OrderSuccessActivity.class);
                         Constants.intent.putExtra("OrderId", order_id);

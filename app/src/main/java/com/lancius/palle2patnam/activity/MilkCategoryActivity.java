@@ -109,7 +109,7 @@ public class MilkCategoryActivity extends AppCompatActivity {
         categoryIdList = new ArrayList<>();
 
         db = new DatabaseHandler(getApplicationContext());
-//        db.deleteAll();
+        db.deleteAll();
 
         contacts = db.getAllCategories();
         bottomLayout = (RelativeLayout) findViewById(R.id.milk_list_bottom_layout);
@@ -310,7 +310,6 @@ public class MilkCategoryActivity extends AppCompatActivity {
         }
 
     }
-
 
     public class CategoryDetailAdapter extends BaseAdapter {
 
@@ -538,8 +537,14 @@ public class MilkCategoryActivity extends AppCompatActivity {
                         weightList.add(aList.get(i).toString());
                     }
 
-                    selected_price = "" + priceList.get(sel_position);
-                    selected_weight = "" + weightList.get(sel_position);
+                    try {
+                        selected_price = "" + priceList.get(sel_position);
+                        selected_weight = "" + weightList.get(sel_position);
+                    } catch (IndexOutOfBoundsException e) {
+                        sel_position = 0;
+                        selected_price = "" + priceList.get(sel_position);
+                        selected_weight = "" + weightList.get(sel_position);
+                    }
 
                     product_id = resultp.get(MilkCategoryActivity.TAG_CATEGORY_PRODUCT_ID);
                     String imageView1 = resultp.get(MilkCategoryActivity.TAG_CATEGORY_PRODUCT_IMAGE);

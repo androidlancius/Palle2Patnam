@@ -191,7 +191,7 @@ public class OrderPayment extends AppCompatActivity {
             params.add(new BasicNameValuePair("order_total", total_cart_price));
             params.add(new BasicNameValuePair("product_price", cart_price));
             params.add(new BasicNameValuePair("product_weight", total_weights));
-            params.add(new BasicNameValuePair("product_name", prod_names ));
+            params.add(new BasicNameValuePair("product_name", prod_names));
             params.add(new BasicNameValuePair("address", address));
             params.add(new BasicNameValuePair("name", name));
             params.add(new BasicNameValuePair("mobile", mobile));
@@ -287,3 +287,4 @@ public class OrderPayment extends AppCompatActivity {
     }
 
 }
+
